@@ -7,7 +7,17 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.30" />
+    <PackageReference Include="EntityFramework" Version="6.3.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Migrations\201911130124250_InitialCreate.resx">
+      <DependentUpon>201911130124250_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Migrations\201911140041514_AddComment_OrderDetail.resx">
+      <DependentUpon>201911140041514_AddComment_OrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
